@@ -26,3 +26,13 @@ We also need to set up the constraints for the optimization problem. We need fou
 (2) Special flow constraint for Monday and Friday: To keep a weekly cycle, we need the number of aircraft staying at each airport at the beginning of the week and at the end of the week to be equal. This means that the total number of aircraft going out of each airport is the same as the total number of aircrafts coming into the airport by the end of Friday and equal to a fixed number <br>
 (3) Cargo flow constraint: Number of cargo holding  from the previous day + number of cargo coming in today = Number of cargo shipped today + number of cargo holding today <br>
 (4) Total number of aircraft constraint: The fixed number of aircraft at the beginning of the week at each airports sum up to 1200
+
+# Mathematical Details
+The formulation of the optimization problem is as below: <br>
+(1) Xijt: Number of aircraft with a load of cargo from airport i to airport j on day t <br>
+(2) Eijt: Number of empty aircraft from airport i to airport j on day t (i = j means the number of aircrafts stay at airport i on day t) <br>
+(3) Lijt: Number of unshipped cargo from airport i to airport j on day t <br>
+(4) Si: Number of aircraft available on Monday for airport i <br>
+(5) Cij: Repositioning of flight from airport i to airport j <br>
+(6) Dijt: Cargo coming in to ship from airport i to airport j on day t <br>
+![image1](images/mathematical_formation.png)
