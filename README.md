@@ -7,7 +7,7 @@ Logistic problem is a classical problem in the field of optimization. Express Ai
 The amount of cargo that can be delivered between an origin-destination pair depends on the number of aircraft at the origin. In addition to carrying cargo, the operator can also reposition empty aircraft between airports to make sure cargo could be shipped properly, which also encounters a repositioning cost. The cargo operations are dynamic, with aircraft becoming available at their destination the day after they move.
 Considering the cargo holding cost and aircraft repositioning cost, we want to come up with an optimal cargo shipping schedule to minimize these costs.
 # Data Description
-The total number of aircraft is 1200. \n
+The total number of aircraft is 1200. <br>
 The incoming cargo schedule is shown below:
 ![image1](images/cargo_table.png)
 The cost for keeping one unit of cargo on the ground for one day is 10. 
