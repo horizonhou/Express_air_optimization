@@ -49,5 +49,6 @@ The formulation of the optimization problem is as below: <br>
 ![image1](images/optimized_holding.png)
 ### Amount of aircrafts available on Monday:
 <p align="center"> SA = 250, SB = 510, SC = 440 </p>
+
 ### Number aircrafts available each day for each airport:
 ![image1](images/optimized_aircraft_availability.png)
