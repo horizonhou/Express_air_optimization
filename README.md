@@ -16,7 +16,7 @@ The repositioning cost of empty flight is shown below:
 # Overview of the optimization model
 In our optimization model, our objective is to minimize the cost of cargo shipping. Since the total number of cargo needed to be shipped is fixed, we don’t need to consider the cost for cargo shipping. In our cost function, we just need to consider the cargo holding cost and repositioning cost.
 One key point for our decision variables is that, since we consider the number of cargo and number of aircraft as integers, our decision variables and final shipping schedule should hold integer values. We set up four types of integer decision variables:
-Xijt: Number of aircraft with a load of cargo from airport i to airport j on day t
+Xijt: Number of aircraft with a load of cargo from airport i to airport j on day t \n
 Eijt: Number of empty aircraft from airport i to airport j on day t (i = j means the number of aircraft stay at airport i on day t)
 Lijt: Number of unshipped cargo from airport i to airport j on day t
 Si: Number of aircraft available on Monday for airport i
