@@ -16,12 +16,12 @@ The repositioning cost of empty flight is shown below:
 # Overview of the optimization model
 In our optimization model, our objective is to minimize the cost of cargo shipping. Since the total number of cargo needed to be shipped is fixed, we don’t need to consider the cost for cargo shipping. In our cost function, we just need to consider the cargo holding cost and repositioning cost.
 One key point for our decision variables is that, since we consider the number of cargo and number of aircraft as integers, our decision variables and final shipping schedule should hold integer values. We set up four types of integer decision variables:
-1. Xijt: Number of aircraft with a load of cargo from airport i to airport j on day t <br>
-2. Eijt: Number of empty aircraft from airport i to airport j on day t (i = j means the number of aircraft stay at airport i on day t) <br>
-3. Lijt: Number of unshipped cargo from airport i to airport j on day t <br>
-4. Si: Number of aircraft available on Monday for airport i <br>
-We also need to set up the constraints for the optimization problem. We need four types of constraints:
-1. Aircraft flow constraint: Total number of aircraft coming into the airport (including aircraft staying at the airport) by the end of previous day equals total number of aircraft coming out of the airport on the current day. Friday is linked to Monday to form a cycle <br>
-2. Special flow constraint for Monday and Friday: To keep a weekly cycle, we need the number of aircraft staying at each airport at the beginning of the week and at the end of the week to be equal. This means that the total number of aircraft going out of each airport is the same as the total number of aircrafts coming into the airport by the end of Friday and equal to a fixed number <br>
-3. Cargo flow constraint: Number of cargo holding  from the previous day + number of cargo coming in today = Number of cargo shipped today + number of cargo holding today <br>
-4. Total number of aircraft constraint: The fixed number of aircraft at the beginning of the week at each airports sum up to 1200
+(1) Xijt: Number of aircraft with a load of cargo from airport i to airport j on day t <br>
+(2) Eijt: Number of empty aircraft from airport i to airport j on day t (i = j means the number of aircraft stay at airport i on day t) <br>
+(3) Lijt: Number of unshipped cargo from airport i to airport j on day t <br>
+(4) Si: Number of aircraft available on Monday for airport i <br>
+We also need to set up the constraints for the optimization problem. We need four types of constraints: <br>
+(1) Aircraft flow constraint: Total number of aircraft coming into the airport (including aircraft staying at the airport) by the end of previous day equals total number of aircraft coming out of the airport on the current day. Friday is linked to Monday to form a cycle <br>
+(2) Special flow constraint for Monday and Friday: To keep a weekly cycle, we need the number of aircraft staying at each airport at the beginning of the week and at the end of the week to be equal. This means that the total number of aircraft going out of each airport is the same as the total number of aircrafts coming into the airport by the end of Friday and equal to a fixed number <br>
+(3) Cargo flow constraint: Number of cargo holding  from the previous day + number of cargo coming in today = Number of cargo shipped today + number of cargo holding today <br>
+(4) Total number of aircraft constraint: The fixed number of aircraft at the beginning of the week at each airports sum up to 1200
