@@ -9,3 +9,4 @@ Considering the cargo holding cost and aircraft repositioning cost, we want to c
 # Data Description
 The total number of aircraft is 1200.
 The incoming cargo schedule is shown below:
+![image1](images/cargo_table.png)
