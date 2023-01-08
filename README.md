@@ -40,7 +40,7 @@ The formulation of the optimization problem is as below: <br>
 # Optimized Schedule
 ### Optimal cost: 17925 <br>
 ### Optimized Schedule for loaded aircraft: <br>
-![image1](images/optimized_loaded_aircraft.png)
+![image1](images/optimized_loaded_craft.png)
 ### Optimized Schedule for empty aircrafts:
 ![image1](images/optimized_empty_craft.png)
 ### Optimized Schedule for cargo need to shipped (Lij,t-1 + Dijt):
@@ -49,4 +49,5 @@ The formulation of the optimization problem is as below: <br>
 ![image1](images/optimized_holding.png)
 ### Amount of aircrafts available on Monday:
 <p align="center"> SA = 250, SB = 510, SC = 440 </p>
-
+### Number aircrafts available each day for each airport:
+![image1](images/optimized_aircraft_availability.png)
